@@ -1,0 +1,51 @@
+434148a065c2330a8eaf3215da48d4bc540ae0e326ce93f7550d25be602e4bc7  PCB_Avancado/Projetos/Modulo_L7-02/[01] - COVER PAGE.SchDoc
+992de79e6ff7e6899577a3db0483671f2ac0b5a2aebdfd5a1c01afce91f8e5b7  PCB_Avancado/Projetos/Modulo_L7-02/[02] - BLOCK DIAGRAM.SchDoc
+bf9ef31d5342ddb29927d5a1d67058bb2e285b81875e3de92dadc47049a22cfc  PCB_Avancado/Projetos/Modulo_L7-02/[03] - CONNECTORS.SchDoc
+b1b73df7bda0bb1c11ddfd67980d5cc2b249f71f713514772b08960d75c7a6f2  PCB_Avancado/Projetos/Modulo_L7-02/[04] - CPU - DDR3, DDR3 MEM.SchDoc
+71470a9134cd2456e598def39d9f4676f7540a7893ebdabedbcf320a2187d620  PCB_Avancado/Projetos/Modulo_L7-02/[05] - CPU - PCIE, SATA.SchDoc
+3fad276d154b672e49fa4a8814d3a30358789f01c33bba8baccfdccf7690960c  PCB_Avancado/Projetos/Modulo_L7-02/[06] - CPU - HDMI, LVDS.SchDoc
+736ccf85a2e5322a4440adfa9e41c124af558461e8f232c47a41f0fc477f5a8c  PCB_Avancado/Projetos/Modulo_L7-02/[07] - CPU - USB, ETHERNET.SchDoc
+7bb82f5127fbeee2561022959421dfa3e525a9b61ebb59d597eee26c2ab7d71a  PCB_Avancado/Projetos/Modulo_L7-02/[08] - CPU - SPI, I2C, SD, MMC.SchDoc
+a5a8397cf46cf488f9b1280f7aa96ea177be22d38cac76631ebee6bcc4ab27b8  PCB_Avancado/Projetos/Modulo_L7-02/[09] - CPU - UART, AUDIO.SchDoc
+d77e9b863c3faadf13b82308d0d8b8c31b6d4ae2c2121b54925713adf86ca733  PCB_Avancado/Projetos/Modulo_L7-02/[10] - CPU - JTAG, CONTROL.SchDoc
+81f32964e801819ebc009cc44de36b246d62222dc3f8e785d7e649342a7aa1c7  PCB_Avancado/Projetos/Modulo_L7-02/[11] - CPU - POWER.SchDoc
+e0695edbb5845565ad4129a54ccddb183e3bb6d71e79c6b23f168cfc76fcb550  PCB_Avancado/Projetos/Modulo_L7-02/[12] - CPU - UNUSED.SchDoc
+f9fe4d8cde590ce26a50d3172ce627dc45a91c3b56894e520c5d3348eac1c77c  PCB_Avancado/Projetos/Modulo_L7-02/[13] - ETHERNET PHY.SchDoc
+5f495addd7d5e18d1a29148610ed700798b7fe37d24dff687cc628ecdd16c338  PCB_Avancado/Projetos/Modulo_L7-02/[14] - SPI FLASH, LEDS.SchDoc
+de4f8876600b8d56d9b02769c585a1c73cfb1c9490a986dc927502e75731ea3e  PCB_Avancado/Projetos/Modulo_L7-02/[15] - PWR 3V3, 1V375.SchDoc
+91387384c32be61b938a5c26d6c759c624ec67a34c2bc8f5f6f8618e2067e0be  PCB_Avancado/Projetos/Modulo_L7-02/[16] - PWR 2V5, 1V5.SchDoc
+d7effaaa774f09bb2e6da4206f6e717228c741dd5d59bb33e4c7ca26bdeba3a8  PCB_Avancado/Projetos/Modulo_L7-02/[17] - MECH.SchDoc
+4dd74987fed6ad05c9994001f2a41bcb231062fa2f066f41a54ce781e61cc134  PCB_Avancado/Projetos/Modulo_L7-02/[18] - POWER SEQUENCING.SchDoc
+dd937061d624aacf34b45fe200cf7f6b21e0ec8ef7ddb80894ba9a45f45ed992  PCB_Avancado/Projetos/Modulo_L7-02/[19] - DOC REVISION HISTORY.SchDoc
+36606dbf2899492d4d94fc3b367637eab5a7a56681b947396731670306000cd0  PCB_Avancado/Projetos/Modulo_L7-02/iMX6 Rex_V1I1 Project.Dat
+1a98791aad6074e040f5e32cf28564871c470420c5881a3072d1c458589d6f3f  PCB_Avancado/Projetos/Modulo_L7-02/iMX6 Rex_V1I1 Project.SchDoc
+01d02a3cfd8c50848b6018eb8bd3150e65b790be0714299c3123fa1e92e84114  PCB_Avancado/Projetos/Modulo_L7-02/iMX6 Rex_V1I1.Dat
+053345d3ae8f8a5801c092abfa70e0a50eb095a052ee4c809451613a96177b37  PCB_Avancado/Projetos/Modulo_L7-02/iMX6 Rex_V1I1.PrjPcb
+aa47b0fd9199584e87e6410ee841d259d7d017191ea691ea23ac9c36d718cec8  PCB_Avancado/Projetos/Modulo_L7-02/iMX6 Rex_V1I1.PrjPcbStructure
+16c1e04dfc712b38cd8eed2ec57df65b4a34c4e1a66296eeb3523d653b1bc870  PCB_Avancado/Projetos/Modulo_L7-02/iMX6 Rex_V1I1_PCB.PcbDoc
+8266b19d86ea0e819eaf693e2d8611dc92e0b07198df1788bfce24356af44b67  PCB_Avancado/Projetos/Modulo_L7-02/read_me.txt
+4c9faa6768dbb5ab0f86a354104f68b729adcbc399a57c1a3b30e26f8e54265e  PCB_Avancado/Projetos/Placa_base_L7-01/[01] - COVER PAGE.SchDoc
+2450837a4824fa895b4ab04547f68d9620c20b95c71156ac1d84639f10bcf164  PCB_Avancado/Projetos/Placa_base_L7-01/[02] - BLOCK DIAGRAM.SchDoc
+d75659a726b027c262966ab92e9eaa498def591edd9a60235ce1dc0e4fe70bbb  PCB_Avancado/Projetos/Placa_base_L7-01/[03] - CONNECTORS.SchDoc
+2b82dce379937a89f490f54c967534d2cb0aded5d3f8ceca41d9efbfc8d9c1ac  PCB_Avancado/Projetos/Placa_base_L7-01/[04] - PCIE MINI 1, PCIE.SchDoc
+cb3c9309dffe0022b4611af553bc73571c862621791cc49c7b4214709f33f02a  PCB_Avancado/Projetos/Placa_base_L7-01/[05] - PCIE MINI 2, AUDIO2.SchDoc
+9c1cf2088bab7e1cbda3ff4d33e6bd9af2bdf24b15c0bba5cf915654559283d9  PCB_Avancado/Projetos/Placa_base_L7-01/[06] - SATA, CFAST.SchDoc
+d8a944b37af7848c7d32a0eb2b68b9c6a6d0549c053cdbcd5f5d33c9279e9a9b  PCB_Avancado/Projetos/Placa_base_L7-01/[07] - HDMI.SchDoc
+1e4efeb43cc1cbc6c476d200e430f39d873ef41bbc15e1a9c23867ae6df0869f  PCB_Avancado/Projetos/Placa_base_L7-01/[08] - LVDS.SchDoc
+688dfbef1f6e2eb8c46d65d2a06c4bf7a34176d697c5f95d907589a10ac4e1d5  PCB_Avancado/Projetos/Placa_base_L7-01/[09] - USB.SchDoc
+7b994ab3e11e0e57e3d47c9177008e087702d5ba7d90ccdbe3951fc815ccd808  PCB_Avancado/Projetos/Placa_base_L7-01/[10] - ETHERNET.SchDoc
+e36c33de86bd20df43d83c6501bbcbbf3b0a0d8812dab84c24e5744b50d19de4  PCB_Avancado/Projetos/Placa_base_L7-01/[11] - AUDIO1.SchDoc
+304f4f7852059610b80068771e3bf590d8ede0842af2e11ce19affaad3b0e314  PCB_Avancado/Projetos/Placa_base_L7-01/[12] - SD.SchDoc
+b8ee5ea8886b0fc34a05fc8ca6f9b47a07b7a13433f5ba0b5375c5d5db89e547  PCB_Avancado/Projetos/Placa_base_L7-01/[13] - UARTS.SchDoc
+bed5dd3758ff9948687e8a95783a46a00c60604e2aa6d4991e48b132db049558  PCB_Avancado/Projetos/Placa_base_L7-01/[14] - RTC, EEPROM, GPIO, TOUCH SCREEN.SchDoc
+96f3bf8e64d11908b3dd387470a60208e8e6a411b3cdf6a93867062866a3368d  PCB_Avancado/Projetos/Placa_base_L7-01/[15] - MISC, JTAG, HEADERS.SchDoc
+aed886edf21549808903155693bd327ed99e4e841a00f9b66ce5eed70f0fd591  PCB_Avancado/Projetos/Placa_base_L7-01/[16] - POWERS 5V, 3V3.SchDoc
+23bdc6f4d358f26179c761f37f7781c82bd9c70465a48e645f359616488c0a62  PCB_Avancado/Projetos/Placa_base_L7-01/[17] - PWR IN, LEDS, BUTTONS, MECH.SchDoc
+d65733aae3ee7501d262445e5e9fba604f750544a7c25f77b288d49757723b1f  PCB_Avancado/Projetos/Placa_base_L7-01/[18] - DOC, POWER SEQUENCING.SchDoc
+28c76ab47c483c9e903b7219d4b2e4eebc199766618cb6dbaa492135921db563  PCB_Avancado/Projetos/Placa_base_L7-01/[19] - REVISION HISTORY.SchDoc
+888dcc572ac1bea8298f85a94b687fefab8325e9ac6e09d9c8cfe9107008890b  PCB_Avancado/Projetos/Placa_base_L7-01/iMX6 Rex Development Baseboard V1I1 Project.SchDoc
+c34535a4e0c8ef03e7e6c9356e47b01bce8a76e30038819dfb02f8fce5310ec6  PCB_Avancado/Projetos/Placa_base_L7-01/iMX6 Rex Development Baseboard V1I1.Dat
+b56a8ed40295d113b6fad3b53dc2a7fae5eae5dbaeefb42868fbe59b83ed95d6  PCB_Avancado/Projetos/Placa_base_L7-01/iMX6 Rex Development Baseboard V1I1.PrjPcb
+32cf26422f46121a896aec6568a0f306d38d90c80242f0a3e92c199515df0dcc  PCB_Avancado/Projetos/Placa_base_L7-01/iMX6 Rex Development Baseboard V1I1.PrjPcbStructure
+c27bdea81ff1d8a2f04dd783fe982960603bb5b6caf36261b3ce8708c967f0c7  PCB_Avancado/Projetos/Placa_base_L7-01/iMX6 Rex Development Baseboard V1I1_PCB.PcbDoc
+8266b19d86ea0e819eaf693e2d8611dc92e0b07198df1788bfce24356af44b67  PCB_Avancado/Projetos/Placa_base_L7-01/read_me.txt

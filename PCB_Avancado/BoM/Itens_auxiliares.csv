@@ -1,0 +1,60 @@
+Placa,Designator,Quantidade,Descrição / comentário,MPN,Fabricante,Classificação,Footprint
+Módulo,FID1,1,FID_1MM_SMALL,,,Fiducial,FID_40X52D
+Módulo,FID2,1,FID_1MM_SMALL,,,Fiducial,FID_40X52D
+Módulo,FID3,1,FID_1MM_SMALL,,,Fiducial,FID_40X52D
+Módulo,FID4,1,FID_1MM_SMALL,,,Fiducial,FID_40X52D
+Módulo,MH1,1,MH_5MMC_2.2MMD,,,Furo de montagem,MH_5MMD_2.2MMD
+Módulo,MH2,1,MH_5MMC_2.2MMD,,,Furo de montagem,MH_5MMD_2.2MMD
+Módulo,MH3,1,MH_5MMC_2.2MMD,,,Furo de montagem,MH_5MMD_2.2MMD
+Módulo,MH4,1,MH_5MMC_2.2MMD,,,Furo de montagem,MH_5MMD_2.2MMD
+Módulo,TP3,1,TP_25MILC,,,Ponto de teste,TP_25C
+Módulo,TP5,1,TP_25MILC,,,Ponto de teste,TP_25C
+Módulo,TP6,1,TP_25MILC,,,Ponto de teste,TP_25C
+Módulo,TP7,1,TP_25MILC,,,Ponto de teste,TP_25C
+Módulo,TP8,1,TP_25MILC,,,Ponto de teste,TP_25C
+Módulo,TP9,1,TP_25MILC,,,Ponto de teste,TP_25C
+Módulo,TP10,1,TP_25MILC,,,Ponto de teste,TP_25C
+Módulo,TP11,1,TP_25MILC,,,Ponto de teste,TP_25C
+Módulo,PCB1,1,iMX6 Rex V1I1 PCB,,,Item só no esquemático: iMX6 Rex V1I1 PCB,Sem footprint no PCB
+Módulo,FIRMWARE_FOR_U10,1,iMX6_REX_uBOOT 1.0,,,Item só no esquemático: iMX6_REX_uBOOT 1.0,Sem footprint no PCB
+Placa base,CR1,1,PCIe Mini Card,,,Cartão de expansão representado,MINI_PCIE_FULL CARD
+Placa base,CR2,1,PCIe Mini Card,,,Cartão de expansão representado,MINI_PCIE_FULL CARD
+Placa base,FID1,1,FID_1MMC,,,Fiducial,FID_40X120D
+Placa base,FID2,1,FID_1MMC,,,Fiducial,FID_40X120D
+Placa base,FID3,1,FID_1MMC,,,Fiducial,FID_40X120D
+Placa base,FID4,1,FID_1MMC,,,Fiducial,FID_40X120D
+Placa base,FID5,1,FID_1MMC,,,Fiducial,FID_40X120D
+Placa base,FID6,1,FID_1MMC,,,Fiducial,FID_40X120D
+Placa base,FID7,1,FID_1MMC,,,Fiducial,FID_40X120D
+Placa base,FID8,1,FID_1MMC,,,Fiducial,FID_40X120D
+Placa base,M1,1,iMX6 Rex Module V1I1 3D,,,Modelo 3D,IMX6 REX MODULE 3D
+Placa base,MH1,1,MH_5MMC_2.2MMD,,,Furo de montagem,MH_5MMD_2.2MMD
+Placa base,MH2,1,MH_5MMC_2.2MMD,,,Furo de montagem,MH_5MMD_2.2MMD
+Placa base,MH3,1,MH_5MMC_2.2MMD,,,Furo de montagem,MH_5MMD_2.2MMD
+Placa base,MH4,1,MH_5MMC_2.2MMD,,,Furo de montagem,MH_5MMD_2.2MMD
+Placa base,MH5,1,MH_7.4MMC_3.2MMD,,,Furo de montagem,MH_7.4MMD_3.2MMD
+Placa base,MH6,1,MH_7.4MMC_3.2MMD,,,Furo de montagem,MH_7.4MMD_3.2MMD
+Placa base,MH7,1,MH_7.4MMC_3.2MMD,,,Furo de montagem,MH_7.4MMD_3.2MMD
+Placa base,MH8,1,MH_7.4MMC_3.2MMD,,,Furo de montagem,MH_7.4MMD_3.2MMD
+Placa base,MH9,1,MH_5.2MMC_2.7MMD,,,Furo de montagem,MH_5.2MMD_2.7MMD
+Placa base,MH10,1,MH_5.2MMC_2.7MMD,,,Furo de montagem,MH_5.2MMD_2.7MMD
+Placa base,MH11,1,MH_5.2MMC_2.7MMD,,,Furo de montagem,MH_5.2MMD_2.7MMD
+Placa base,MH12,1,MH_5.2MMC_2.7MMD,,,Furo de montagem,MH_5.2MMD_2.7MMD
+Placa base,MH13,1,MH_5MMC_2.2MMD,,,Furo de montagem,MH_5MMD_2.2MMD
+Placa base,TP1,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,TP2,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,TP3,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,TP4,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,TP5,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,TP6,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,TP7,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,TP8,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,TP9,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,TP10,1,TP_25MILC,,,Ponto de teste,TP_25C
+Placa base,LINK2,1,LINK,QPC02SXGN-RC,Sullins Connector Solutions,"Item só no esquemático: CONN JUMPER SHORTING .100"" GOLD",Sem footprint no PCB
+Placa base,LINK1,1,LINK,QPC02SXGN-RC,Sullins Connector Solutions,"Item só no esquemático: CONN JUMPER SHORTING .100"" GOLD",Sem footprint no PCB
+Placa base,LINK3,1,LINK,QPC02SXGN-RC,Sullins Connector Solutions,"Item só no esquemático: CONN JUMPER SHORTING .100"" GOLD",Sem footprint no PCB
+Placa base,LINK5,1,LINK,QPC02SXGN-RC,Sullins Connector Solutions,"Item só no esquemático: CONN JUMPER SHORTING .100"" GOLD",Sem footprint no PCB
+Placa base,BAT1,1,CR2032,CR2032,Panasonic - BSG,Item só no esquemático: BATTERY LITHIUM COIN 3V 20MM,Sem footprint no PCB
+Placa base,LINK4,1,LINK,QPC02SXGN-RC,Sullins Connector Solutions,"Item só no esquemático: CONN JUMPER SHORTING .100"" GOLD",Sem footprint no PCB
+Placa base,PCB1,1,iMX6 Rex Baseboard V1I1 PCB,,,Item só no esquemático: iMX6 Rex Baseboard V1I1 PCB,Sem footprint no PCB
