@@ -1,9 +1,9 @@
 # Apresentação do trabalho
 
-**Aluno:** CarloRenan  
+**Aluno:** Carlos Renan  
 **Curso:** Advanced PCB Layout Course  
 **Projeto:** iMX6 Rex e Development Baseboard  
-**Prazo de entrega:** 18/10/2026
+
 
 ## Objetivo
 
