@@ -1,6 +1,12 @@
 # PCB Avançado — iMX6 Rex
 
-Projeto de estudo do curso **Advanced PCB Layout Course**, organizado por **CarloRenan**. A entrega reúne os arquivos finais disponíveis no material do curso, imagens do layout, lista de materiais (BOM) e a cotação da JLCPCB com a opção de montagem apresentada nas capturas.
+Projeto de estudo do curso **Advanced PCB Layout Course**, organizado por **CarloRenan**. A entrega reúne os arquivos finais disponíveis no material do curso, vistas 2D e 3D, lista de materiais (BOM) e a cotação da JLCPCB com a opção de montagem apresentada nas capturas.
+
+![Conjunto iMX6 Rex e Development Baseboard em 3D](PCB_Avancado/Imagens/Conjunto_3D.png)
+
+*Vista mecânica do conjunto com o modelo do módulo incorporado à placa base. [Ver todas as vistas 3D e 2D](PCB_Avancado/Imagens/README.md).*
+
+**Acesso rápido:** [Como o circuito funciona](PCB_Avancado/docs/FUNCIONAMENTO.md) · [Arquivos Altium](PCB_Avancado/Projetos/) · [BOM em Excel](PCB_Avancado/BoM/BOM_e_Cotacao.xlsx) · [Cotação JLCPCB](PCB_Avancado/Cotacao/README.md)
 
 ## O que essas placas fazem?
 
@@ -13,7 +19,21 @@ O conjunto forma uma plataforma de computação embarcada. O **módulo iMX6 Rex*
 
 O módulo usa o processador **MCIMX6Q5EYM10AC**, quatro memórias **MT41J128M16HA-15E:D TR**, o PHY Ethernet **KSZ9021RN** e a flash **SST25VF016B-75-4I-QAF**. Os conectores J1/J2 interligam o módulo à base. A base possui circuitos e conectores para HDMI, LVDS, USB, Ethernet, SATA/CFast, PCIe, áudio, SD, UART e GPIO. O funcionamento de cada interface depende da montagem e do software usados.
 
+Em uma aplicação, o conjunto pode executar software embarcado para uma interface com tela, comunicação em rede e controle de periféricos. A tarefa concreta depende do firmware e do sistema instalado.
+
 Detalhes: [funcionamento e arquitetura](PCB_Avancado/docs/FUNCIONAMENTO.md).
+
+## Vistas 3D das placas
+
+| Módulo — face superior | Módulo — face inferior |
+|---|---|
+| ![Módulo em 3D, face superior](PCB_Avancado/Imagens/Modulo_3D_superior.png) | ![Módulo em 3D, face inferior](PCB_Avancado/Imagens/Modulo_3D_inferior.png) |
+
+| Placa base — face superior | Placa base — face inferior |
+|---|---|
+| ![Placa base em 3D, face superior](PCB_Avancado/Imagens/Placa_base_3D_superior.png) | ![Placa base em 3D, face inferior](PCB_Avancado/Imagens/Placa_base_3D_inferior.png) |
+
+As imagens usam os corpos 3D e os posicionamentos presentes nos arquivos Altium. Cores, acabamento e detalhes de cobre estão simplificados. A [galeria](PCB_Avancado/Imagens/README.md) explica a origem e o alcance dessas visualizações.
 
 ## Layout final disponível no curso
 
@@ -34,10 +54,10 @@ As prévias 2D foram reconstruídas a partir das coordenadas dos arquivos PCB. E
 
 | Pasta / arquivo | Conteúdo |
 |---|---|
-| [Projetos](PCB_Avancado/Projetos) | 51 arquivos originais: projetos Altium, PCBs, esquemáticos e arquivos auxiliares |
-| [BoM](PCB_Avancado/BoM) | Planilha Excel, BOMs em CSV, inventários completos e registros das variantes |
-| [Cotacao](PCB_Avancado/Cotacao) | Dois prints originais e resumo dos valores da JLCPCB |
-| [Imagens](PCB_Avancado/Imagens) | Vistas das faces superior e inferior das duas placas |
+| [Projetos](PCB_Avancado/Projetos/) | 51 arquivos originais: projetos Altium, PCBs, esquemáticos e arquivos auxiliares |
+| [BoM](PCB_Avancado/BoM/) | Planilha Excel, BOMs em CSV, inventários completos e registros das variantes |
+| [Cotacao](PCB_Avancado/Cotacao/) | Dois prints originais e resumo dos valores da JLCPCB |
+| [Imagens](PCB_Avancado/Imagens/README.md) | 5 vistas 3D e 5 prévias 2D das placas |
 | [Critérios da entrega](PCB_Avancado/docs/ENTREGA.md) | Requisitos informados pelo professor e situação de cada item |
 | [Origem e integridade](PCB_Avancado/docs/ORIGEM.md) | Seleção dos arquivos, créditos e hashes SHA-256 |
 

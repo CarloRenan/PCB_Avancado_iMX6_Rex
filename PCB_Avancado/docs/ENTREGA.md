@@ -4,8 +4,9 @@ Resumo da orientação apresentada no e-mail do curso **Advanced PCB Layout Cour
 
 | Requisito | Material preparado | Situação |
 |---|---|---|
-| Pasta do curso no repositório pessoal | `PCB_Avancado/` | Estrutura pronta para publicação |
+| Pasta do curso no repositório pessoal | `PCB_Avancado/` | Publicado no repositório pessoal |
 | Arquivos do projeto | `Projetos/Modulo_L7-02` e `Projetos/Placa_base_L7-01` | 51 arquivos originais preservados |
+| Imagens e explicação | `Imagens/` e `docs/FUNCIONAMENTO.md` | Vistas 2D/3D e descrição dos blocos do circuito |
 | BOM | `BoM/` | Listas extraídas do projeto base; variante identificada para revisão |
 | Cotação JLCPCB | `Cotacao/` | Dois prints e resumo dos valores |
 | Opção de montagem na fábrica | Linha PCBA da base: 2 unidades, dois lados | Demonstrada para a base; módulo HDI indisponível no print |
