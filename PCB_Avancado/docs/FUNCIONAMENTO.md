@@ -1,10 +1,10 @@
-# Como o circuito funciona
+# Funcionamento do circuito
 
 O conjunto **iMX6 Rex + Development Baseboard** forma uma plataforma de computação embarcada. O módulo compacto executa os programas; a placa base oferece alimentação e conexões para telas, rede, armazenamento e periféricos. Pode ser utilizado no desenvolvimento de uma interface gráfica, de um equipamento conectado ou de uma aplicação de controle. A função final depende do software instalado.
 
 ![Conjunto montado em 3D](../Imagens/Conjunto_3D.png)
 
-*Vista mecânica de referência: o módulo sobre a base é o modelo M1 incorporado ao arquivo da base. As vistas individuais da [galeria](../Imagens/README.md) usam o arquivo de cada etapa do curso.*
+*Conjunto iMX6 Rex e Development Baseboard — montagem de referência com o modelo M1 da base.*
 
 ## 1. Módulo: processamento e memória
 
@@ -12,7 +12,7 @@ O módulo mede **70 × 40 mm** e possui **12 camadas de cobre**. Nele ficam o pr
 
 | Bloco | Referência e componente no módulo | Função |
 |---|---|---|
-| Processador | U1 — MCIMX6Q5EYM10AC | Executa instruções e controla interfaces. Os parâmetros do esquemático indicam ARM Cortex-A9, quatro núcleos de 32 bits e 1,0 GHz. |
+| Processador | U1 — MCIMX6Q5EYM10AC | Executa instruções e controla interfaces. ARM Cortex-A9 com quatro núcleos de 32 bits e frequência nominal de 1,0 GHz. |
 | Memória DDR3 | U2–U5 — MT41J128M16HA-15E:D TR | Guarda programas e dados durante a execução. Quatro componentes de 2 Gbit somam 1 GiB, usualmente indicado como 1 GB. |
 | Flash SPI | U10 — SST25VF016B-75-4I-QAF | Memória não volátil de 16 Mbit, equivalentes a 2 MiB. O esquemático inclui uma referência a uBoot, relacionada à inicialização. |
 | Ethernet PHY | U8 — KSZ9021RN | Implementa a interface física Ethernet 10/100/1000, em conjunto com o controlador do processador. |
@@ -21,8 +21,6 @@ O módulo mede **70 × 40 mm** e possui **12 camadas de cobre**. Nele ficam o pr
 | Interligação | J1/J2 — QSH-030-01-L-D-A | Conectores de 60 posições que transportam alimentação e sinais entre as placas. |
 
 A **DDR3 é a memória de trabalho**: perde o conteúdo ao desligar. A **flash conserva dados**, mas possui capacidade muito menor. A memória usada para executar programas, o código de inicialização e o armazenamento do sistema cumprem funções diferentes.
-
-As capacidades e velocidades acima descrevem os componentes selecionados nos esquemáticos. Não são resultados de testes de desempenho desta entrega.
 
 ## 2. Placa base: interfaces externas
 
@@ -50,17 +48,17 @@ A documentação do projeto distingue **um encaixe mini PCIe com PCIe, USB e SIM
 
 Em uma aplicação com tela, o processador executa o programa usando a DDR3, recebe comandos dos periféricos e envia a imagem por HDMI ou LVDS. Arquivos podem vir do armazenamento ou da rede. A base fornece os conectores e os circuitos de interface desses caminhos.
 
-Conceitualmente, a partida envolve estabilizar as fontes, liberar o reset, iniciar o processador conforme a configuração de boot e carregar o software. Os jumpers, as mídias e a sequência exata devem seguir os esquemáticos e o manual da revisão utilizada. Este pacote não inclui firmware executável nem registro de teste de partida.
+Conceitualmente, a partida envolve estabilizar as fontes, liberar o reset, iniciar o processador conforme a configuração de boot e carregar o software. Os jumpers, as mídias e a sequência exata devem seguir os esquemáticos e o manual da revisão utilizada.
 
-## 4. O que o curso exercita
+## 4. Técnicas de layout
 
 As interligações DDR3, HDMI, LVDS, SATA, PCIe, USB e Ethernet exigem cuidados de posicionamento e roteamento. Comprimento e espaçamento das trilhas, planos de referência e empilhamento afetam a propagação dos sinais. As atividades trabalham esses aspectos, além da distribuição de alimentação e dos capacitores de desacoplamento.
 
-A última etapa encontrada para o módulo é **L7-02 — Impedance Adjustment**. Para a base, é **L7-01 — Differential Pairs Fine Tuning**. A aparência das imagens não comprova aprovação de fabricação: a conferência final exige abrir os projetos no Altium, confirmar a variante e executar as verificações aplicáveis.
+A etapa **L7-02 — Impedance Adjustment**, do módulo, trata do ajuste de impedância. A etapa **L7-01 — Differential Pairs Fine Tuning**, da base, trata do ajuste fino de pares diferenciais.
 
-## Onde conferir
+## Documentação técnica
 
 - **Designadores e componentes:** [esquemáticos originais](../Projetos/) e [BOM](../BoM/).
 - **Posições, dimensões e camadas:** documentos `.PcbDoc` e [galeria 2D/3D](../Imagens/README.md).
 - **Contexto da plataforma:** [iMX6 Rex](https://sites.google.com/imx6rex.com/www/home) e [Development Baseboard](https://sites.google.com/imx6rex.com/www/application/imx6-development-board).
-- **Escopo dos arquivos e preparação para fabricação:** [origem](ORIGEM.md) e [critérios da entrega](ENTREGA.md).
+- **Contexto acadêmico:** [apresentação do trabalho](ENTREGA.md) e [referências](ORIGEM.md).

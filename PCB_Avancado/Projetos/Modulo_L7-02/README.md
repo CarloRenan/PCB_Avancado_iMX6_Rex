@@ -1,7 +1,17 @@
-# Módulo iMX6 Rex — L7-02
+# Módulo iMX6 Rex
 
-Abra `iMX6 Rex_V1I1.PrjPcb` no Altium Designer e, em seguida, `iMX6 Rex_V1I1_PCB.PcbDoc`.
+O módulo reúne o processador i.MX6 Quad, a memória DDR3, a flash SPI e os circuitos de alimentação e comunicação. A interligação com a Development Baseboard utiliza os conectores J1/J2.
 
-Etapa do curso: **Impedance Adjustment**. Dimensões: 70 × 40 mm; 12 camadas de cobre. Arquivos nativos preservados sem modificações.
+| Característica | Especificação |
+|---|---|
+| Etapa do curso | L7-02 — Impedance Adjustment |
+| Dimensões | 70 × 40 mm |
+| Camadas de cobre | 12 |
+| Projeto Altium | `iMX6 Rex_V1I1.PrjPcb` |
+| Layout | `iMX6 Rex_V1I1_PCB.PcbDoc` |
 
-Consulte a [explicação do circuito](../../docs/FUNCIONAMENTO.md), as [imagens](../../Imagens) e a [BOM](../../BoM).
+![Módulo iMX6 Rex em 3D](../../Imagens/Modulo_3D_superior.png)
+
+No Altium Designer, o arquivo `.PrjPcb` reúne os documentos do projeto. O `.PcbDoc` apresenta o posicionamento dos componentes, o roteamento e as camadas da placa.
+
+[Funcionamento](../../docs/FUNCIONAMENTO.md) · [Galeria](../../Imagens/README.md) · [Lista de materiais](../../BoM/README.md)

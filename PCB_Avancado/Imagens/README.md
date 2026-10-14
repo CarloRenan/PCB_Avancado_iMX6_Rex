@@ -1,28 +1,32 @@
-# Galeria — layout e vistas 3D
+# Layout e vistas 3D
 
-As imagens documentam os arquivos finais disponíveis no curso: módulo **L7-02** e placa base **L7-01**. Clique em uma imagem para abri-la em maior tamanho.
+Vistas do módulo **iMX6 Rex — L7-02** e da **Development Baseboard — L7-01**.
 
-## Conjunto montado
+## Conjunto
 
 ![Vista mecânica do conjunto](Conjunto_3D.png)
 
-O módulo desta vista é o corpo STEP **M1**, incorporado ao projeto da placa base. Ele mostra a montagem mecânica de referência. Para examinar especificamente o módulo da aula L7-02, use suas vistas individuais abaixo.
+*Montagem de referência com o modelo STEP M1 do módulo, incorporado ao projeto da placa base.*
 
-## Módulo iMX6 Rex — L7-02
+## Módulo iMX6 Rex
 
-| Face superior | Face inferior, vista por baixo |
+**70 × 40 mm · 12 camadas de cobre**
+
+| Face superior | Face inferior |
 |---|---|
 | ![Módulo — face superior](Modulo_3D_superior.png) | ![Módulo — face inferior](Modulo_3D_inferior.png) |
 
-70 × 40 mm · 12 camadas de cobre · processador, DDR3, flash e PHY Ethernet.
+O módulo concentra o processador i.MX6 Quad, a memória DDR3, a flash SPI e o PHY Ethernet. Os conectores J1/J2 fazem a interligação com a placa base.
 
-## Development Baseboard — L7-01
+## Development Baseboard
 
-| Face superior, sem o módulo | Face inferior, vista por baixo |
+**135 × 110 mm · 6 camadas de cobre**
+
+| Face superior, sem o módulo | Face inferior |
 |---|---|
 | ![Base — face superior](Placa_base_3D_superior.png) | ![Base — face inferior](Placa_base_3D_inferior.png) |
 
-135 × 110 mm · 6 camadas de cobre · alimentação e interfaces externas.
+A base distribui a alimentação e oferece os conectores de vídeo, rede, armazenamento, áudio e expansão.
 
 ## Layouts 2D
 
@@ -30,17 +34,15 @@ O módulo desta vista é o corpo STEP **M1**, incorporado ao projeto da placa ba
 
 | Placa | Face superior | Face inferior |
 |---|---|---|
-| Módulo | [Abrir PNG](Modulo_Superior.png) | [Abrir PNG](Modulo_Inferior.png) |
-| Base | [Abrir PNG](Placa_base_Superior.png) | [Abrir PNG](Placa_base_Inferior.png) |
+| Módulo | [Layout superior](Modulo_Superior.png) | [Layout inferior](Modulo_Inferior.png) |
+| Base | [Layout superior](Placa_base_Superior.png) | [Layout inferior](Placa_base_Inferior.png) |
 
-## Origem e alcance das imagens
+As vistas 2D apresentam trilhas externas, pads, vias e contornos. As faces inferiores são vistas por baixo. A comparação utiliza escalas diferentes para as duas placas.
 
-As vistas 3D foram reconstruídas usando os **modelos STEP e corpos extrudados incorporados aos próprios arquivos Altium**, com os posicionamentos e rotações registrados no PCB. Os modelos foram convertidos em malhas com OpenCascade e renderizados para PNG. São visualizações do projeto, não fotografias de placas fabricadas ou capturas do visualizador do Altium.
+## Representação do projeto
 
-As vistas individuais representam 457 referências de componente no módulo e 546 na base. Objetos auxiliares, pontos de teste e itens sem volume podem aparecer apenas como pads. Os modelos de cartões de expansão CR1/CR2 foram omitidos para deixar os conectores visíveis. M1 aparece somente na vista do conjunto.
+As vistas 3D utilizam os modelos STEP, os corpos extrudados e os posicionamentos definidos nos documentos Altium. As representações individuais correspondem à configuração base. Os cartões de expansão CR1/CR2 estão ocultos para facilitar a visualização dos conectores.
 
-Contornos e furos de fixação vêm da geometria do PCB. A espessura visual foi definida em **1,6 mm**, conforme a cotação fornecida; não equivale à validação do empilhamento do projeto. Cores, materiais, detalhes de furação, cobre, vias e serigrafia estão simplificados. A variante Prototype não foi aplicada às imagens.
+A espessura visual é de 1,6 mm. Cores, acabamento, cobre e serigrafia têm representação simplificada.
 
-As prévias 2D usam as coordenadas do PCB e mostram trilhas externas, pads, vias e contornos. Não exibem todos os planos nem todas as camadas. As placas não estão na mesma escala nas comparações.
-
-Para inspecionar todas as camadas ou validar encaixes e fabricação, abra os [arquivos originais](../Projetos/) no Altium Designer.
+[Projetos Altium](../Projetos/) · [Funcionamento do circuito](../docs/FUNCIONAMENTO.md)

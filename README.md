@@ -1,29 +1,45 @@
 # PCB Avançado — iMX6 Rex
 
-Projeto de estudo do curso **Advanced PCB Layout Course**, organizado por **CarloRenan**. A entrega reúne os arquivos finais disponíveis no material do curso, vistas 2D e 3D, lista de materiais (BOM) e a cotação da JLCPCB com a opção de montagem apresentada nas capturas.
+**Aluno:** CarloRenan  
+**Curso:** Advanced PCB Layout Course
+
+Neste trabalho, apresento o estudo do módulo **iMX6 Rex** e da **Development Baseboard**, com foco na arquitetura do circuito, no layout de placas multicamadas e nas interligações de alta velocidade. A documentação reúne os projetos Altium, as vistas 2D e 3D, a lista de materiais e o orçamento de fabricação e montagem.
 
 ![Conjunto iMX6 Rex e Development Baseboard em 3D](PCB_Avancado/Imagens/Conjunto_3D.png)
 
-*Vista mecânica do conjunto com o modelo do módulo incorporado à placa base. [Ver todas as vistas 3D e 2D](PCB_Avancado/Imagens/README.md).*
+*Conjunto iMX6 Rex e Development Baseboard — vista mecânica de referência.*
 
-**Acesso rápido:** [Como o circuito funciona](PCB_Avancado/docs/FUNCIONAMENTO.md) · [Arquivos Altium](PCB_Avancado/Projetos/) · [BOM em Excel](PCB_Avancado/BoM/BOM_e_Cotacao.xlsx) · [Cotação JLCPCB](PCB_Avancado/Cotacao/README.md)
+[Funcionamento do circuito](PCB_Avancado/docs/FUNCIONAMENTO.md) · [Projetos Altium](PCB_Avancado/Projetos/) · [Galeria 2D/3D](PCB_Avancado/Imagens/README.md) · [BOM](PCB_Avancado/BoM/README.md) · [Cotação JLCPCB](PCB_Avancado/Cotacao/README.md)
 
-## O que essas placas fazem?
+## Objetivo
 
-O conjunto forma uma plataforma de computação embarcada. O **módulo iMX6 Rex** concentra o processador, a memória e circuitos essenciais. A **Development Baseboard** recebe esse módulo e disponibiliza alimentação, conectores e interfaces para periféricos.
+Estudar o projeto de uma plataforma de computação embarcada, relacionando as funções dos componentes às decisões de posicionamento e roteamento da PCB. Os principais temas são o controle de impedância, o ajuste de pares diferenciais, a interligação da memória DDR3 e a distribuição de alimentação.
 
-| Parte | Função | Arquivo selecionado no curso |
+## Arquitetura do circuito
+
+O **módulo iMX6 Rex** concentra o processador, a memória e os circuitos essenciais de processamento. A **Development Baseboard** recebe o módulo e oferece alimentação e conexões para vídeo, rede, armazenamento, áudio e periféricos.
+
+| Parte | Função | Etapa do curso |
 |---|---|---|
-| Módulo iMX6 Rex | Processamento com i.MX6 Quad, memória DDR3, flash e interface Ethernet | L7-02 — Impedance Adjustment |
-| Development Baseboard | Conexão de vídeo, armazenamento, rede, USB, áudio e expansão | L7-01 — Differential Pairs Fine Tuning |
+| Módulo iMX6 Rex | Processamento, memória DDR3, flash e interface Ethernet | L7-02 — Impedance Adjustment |
+| Development Baseboard | Alimentação e interfaces externas | L7-01 — Differential Pairs Fine Tuning |
 
-O módulo usa o processador **MCIMX6Q5EYM10AC**, quatro memórias **MT41J128M16HA-15E:D TR**, o PHY Ethernet **KSZ9021RN** e a flash **SST25VF016B-75-4I-QAF**. Os conectores J1/J2 interligam o módulo à base. A base possui circuitos e conectores para HDMI, LVDS, USB, Ethernet, SATA/CFast, PCIe, áudio, SD, UART e GPIO. O funcionamento de cada interface depende da montagem e do software usados.
+O módulo utiliza o processador **MCIMX6Q5EYM10AC**, quatro memórias **MT41J128M16HA-15E:D TR**, o PHY Ethernet **KSZ9021RN** e a flash SPI **SST25VF016B-75-4I-QAF**. Os conectores J1/J2 transportam alimentação e sinais entre as duas placas.
 
-Em uma aplicação, o conjunto pode executar software embarcado para uma interface com tela, comunicação em rede e controle de periféricos. A tarefa concreta depende do firmware e do sistema instalado.
+A base disponibiliza HDMI, LVDS, USB, Ethernet, SATA/CFast, PCIe, áudio, microSD, UART e GPIO. Essa arquitetura permite desenvolver aplicações com interface gráfica, comunicação em rede e controle de periféricos. O comportamento da aplicação é definido pelo software embarcado.
 
-Detalhes: [funcionamento e arquitetura](PCB_Avancado/docs/FUNCIONAMENTO.md).
+A [descrição do funcionamento](PCB_Avancado/docs/FUNCIONAMENTO.md) detalha os componentes, as interfaces e o caminho dos dados.
 
-## Vistas 3D das placas
+## Características das placas
+
+| Característica | Módulo | Placa base |
+|---|---:|---:|
+| Dimensões | 70 × 40 mm | 135 × 110 mm |
+| Camadas de cobre | 12 | 6 |
+| Componentes com código de fabricante na BOM | 457 | 546 |
+| Grupos de componentes na BOM | 66 | 124 |
+
+## Vistas 3D
 
 | Módulo — face superior | Módulo — face inferior |
 |---|---|
@@ -33,59 +49,49 @@ Detalhes: [funcionamento e arquitetura](PCB_Avancado/docs/FUNCIONAMENTO.md).
 |---|---|
 | ![Placa base em 3D, face superior](PCB_Avancado/Imagens/Placa_base_3D_superior.png) | ![Placa base em 3D, face inferior](PCB_Avancado/Imagens/Placa_base_3D_inferior.png) |
 
-As imagens usam os corpos 3D e os posicionamentos presentes nos arquivos Altium. Cores, acabamento e detalhes de cobre estão simplificados. A [galeria](PCB_Avancado/Imagens/README.md) explica a origem e o alcance dessas visualizações.
-
-## Layout final disponível no curso
+## Layout das PCBs
 
 ![Vistas superior e inferior do módulo e da placa base](PCB_Avancado/Imagens/PCB_Avancado_Layouts.png)
 
-| Característica extraída do PCB | Módulo | Placa base |
-|---|---:|---:|
-| Dimensões | 70 × 40 mm | 135 × 110 mm |
-| Camadas de cobre | 12 | 6 |
-| Objetos de componente no PCB, incluindo auxiliares | 473 | 580 |
-| Componentes com código de fabricante na BOM principal | 457 | 546 |
+*Trilhas externas, pads, vias e contornos. Faces inferiores vistas por baixo; comparação sem escala comum entre as placas.*
 
-As prévias 2D foram reconstruídas a partir das coordenadas dos arquivos PCB. Exibem trilhas externas, pads, vias e contornos; não representam todos os planos de cobre nem todas as camadas. As faces inferiores são vistas por baixo e as duas placas não estão na mesma escala.
+## Documentação
 
-“Final” significa **última etapa encontrada no material fornecido**. Os arquivos não foram alterados nem certificados como prontos para fabricação. A conferência DRC e a definição da variante devem ser feitas no Altium.
-
-## Arquivos da entrega
-
-| Pasta / arquivo | Conteúdo |
+| Conteúdo | Acesso |
 |---|---|
-| [Projetos](PCB_Avancado/Projetos/) | 51 arquivos originais: projetos Altium, PCBs, esquemáticos e arquivos auxiliares |
-| [BoM](PCB_Avancado/BoM/) | Planilha Excel, BOMs em CSV, inventários completos e registros das variantes |
-| [Cotacao](PCB_Avancado/Cotacao/) | Dois prints originais e resumo dos valores da JLCPCB |
-| [Imagens](PCB_Avancado/Imagens/README.md) | 5 vistas 3D e 5 prévias 2D das placas |
-| [Critérios da entrega](PCB_Avancado/docs/ENTREGA.md) | Requisitos informados pelo professor e situação de cada item |
-| [Origem e integridade](PCB_Avancado/docs/ORIGEM.md) | Seleção dos arquivos, créditos e hashes SHA-256 |
+| Projetos, esquemáticos e layouts Altium | [Projetos](PCB_Avancado/Projetos/) |
+| Descrição dos blocos e interfaces | [Funcionamento do circuito](PCB_Avancado/docs/FUNCIONAMENTO.md) |
+| Vistas do conjunto e das duas faces de cada PCB | [Galeria 2D/3D](PCB_Avancado/Imagens/README.md) |
+| Lista de materiais em Excel e CSV | [BOM](PCB_Avancado/BoM/README.md) |
+| Orçamento de fabricação e montagem | [Cotação JLCPCB](PCB_Avancado/Cotacao/README.md) |
+| Objetivos e conteúdo do trabalho | [Apresentação acadêmica](PCB_Avancado/docs/ENTREGA.md) |
+| Projeto de referência e bibliografia | [Referências](PCB_Avancado/docs/ORIGEM.md) |
 
-## Cotação JLCPCB
+## Fabricação e montagem
 
-| Item | Quantidade | Valor do item (USD) |
+| Item | Quantidade | Valor (USD) |
 |---|---:|---:|
 | PCB do módulo | 5 | US$ 510,03 |
 | PCB da placa base | 5 | US$ 43,50 |
-| Montagem da placa base, dois lados | 2 | US$ 330,53 |
-| **Soma dos itens exibidos** | — | **US$ 884,06** |
+| Montagem da placa base nos dois lados | 2 | US$ 330,53 |
+| **Subtotal, sem frete e tributos** | — | **US$ 884,06** |
 
-O frete de **US$ 42,51** aparece na tela do módulo e foi registrado separadamente. Não há frete consolidado nem total de impostos demonstrado. A captura informa que **a montagem do módulo HDI está indisponível**. Portanto, a cotação de montagem mostrada é da **placa base**; ela não comprova a montagem das duas placas.
+O orçamento da JLCPCB contempla a fabricação das duas PCBs e a montagem de duas unidades da placa base. O serviço de montagem do módulo HDI está indisponível nessa cotação. O frete apresentado para o módulo é de **US$ 42,51**, separado do subtotal.
 
-Veja [cotação, prazos e comprovantes](PCB_Avancado/Cotacao/README.md).
+[Especificações, prazos e orçamento detalhado](PCB_Avancado/Cotacao/README.md).
 
-## Abrir no Altium Designer
+## Consulta no Altium Designer
 
-1. Baixe ou clone este repositório.
-2. Abra `PCB_Avancado/Projetos/Modulo_L7-02/iMX6 Rex_V1I1.PrjPcb` para o módulo.
-3. Abra `PCB_Avancado/Projetos/Placa_base_L7-01/iMX6 Rex Development Baseboard V1I1.PrjPcb` para a base.
-4. Abra o documento `.PcbDoc` dentro de cada projeto para examinar o layout e as camadas.
-5. Para preparar fabricação/montagem, confirme a variante, compile o projeto, execute DRC e gere os arquivos de fabricação e de posicionamento no Altium.
+| Placa | Projeto | Layout |
+|---|---|---|
+| Módulo | `iMX6 Rex_V1I1.PrjPcb` | `iMX6 Rex_V1I1_PCB.PcbDoc` |
+| Base | `iMX6 Rex Development Baseboard V1I1.PrjPcb` | `iMX6 Rex Development Baseboard V1I1_PCB.PcbDoc` |
 
-As BOMs fornecidas são do **projeto base, sem aplicação da variante Prototype**. Consulte [como a BOM foi produzida](PCB_Avancado/BoM/README.md). Gerbers, arquivos de furação, pick-and-place e firmware executável não estavam no pacote final selecionado e não foram simulados como saídas de fabricação.
+Os projetos estão em `PCB_Avancado/Projetos/`, nas pastas `Modulo_L7-02` e `Placa_base_L7-01`. A [lista de materiais](PCB_Avancado/BoM/README.md) corresponde à configuração base, sem aplicação da variante **Prototype**.
 
-## Créditos
+## Referências
 
-Projeto de referência **iMX6 Rex**, associado à FEDEVEL Academy. Os arquivos nativos e avisos existentes foram preservados. Este repositório documenta o estudo e a organização da entrega; não atribui a autoria original do circuito ao aluno nem adiciona uma licença aos materiais de terceiros.
+Projeto de referência **iMX6 Rex**, utilizado no **Advanced PCB Layout Course**, da **FEDEVEL Academy**.
 
-Referências: [iMX6 Rex](https://sites.google.com/imx6rex.com/www/home) · [Development Baseboard](https://sites.google.com/imx6rex.com/www/application/imx6-development-board).
+- [iMX6 Rex](https://sites.google.com/imx6rex.com/www/home)
+- [Development Baseboard](https://sites.google.com/imx6rex.com/www/application/imx6-development-board)

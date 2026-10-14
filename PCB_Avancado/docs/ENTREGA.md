@@ -1,16 +1,39 @@
-# Entrega solicitada pelo professor
+# Apresentação do trabalho
 
-Resumo da orientação apresentada no e-mail do curso **Advanced PCB Layout Course**: criar uma pasta no repositório pessoal do GitHub contendo os arquivos do projeto, a BOM e uma cotação JLCPCB com opção de montagem na fábrica. Prazo informado: **18/10/2026**.
+**Aluno:** CarloRenan  
+**Curso:** Advanced PCB Layout Course  
+**Projeto:** iMX6 Rex e Development Baseboard  
+**Prazo de entrega:** 18/10/2026
 
-| Requisito | Material preparado | Situação |
+## Objetivo
+
+Apresentar o estudo de uma plataforma de computação embarcada e das técnicas de layout empregadas em placas multicamadas com interfaces de alta velocidade.
+
+O trabalho relaciona os blocos funcionais dos esquemáticos ao posicionamento e ao roteamento das PCBs, com ênfase no ajuste de impedância do módulo e no ajuste dos pares diferenciais da placa base.
+
+## Escopo
+
+| Placa | Etapa | Características |
 |---|---|---|
-| Pasta do curso no repositório pessoal | `PCB_Avancado/` | Publicado no repositório pessoal |
-| Arquivos do projeto | `Projetos/Modulo_L7-02` e `Projetos/Placa_base_L7-01` | 51 arquivos originais preservados |
-| Imagens e explicação | `Imagens/` e `docs/FUNCIONAMENTO.md` | Vistas 2D/3D e descrição dos blocos do circuito |
-| BOM | `BoM/` | Listas extraídas do projeto base; variante identificada para revisão |
-| Cotação JLCPCB | `Cotacao/` | Dois prints e resumo dos valores |
-| Opção de montagem na fábrica | Linha PCBA da base: 2 unidades, dois lados | Demonstrada para a base; módulo HDI indisponível no print |
+| Módulo iMX6 Rex | L7-02 — Impedance Adjustment | 70 × 40 mm; 12 camadas de cobre |
+| Development Baseboard | L7-01 — Differential Pairs Fine Tuning | 135 × 110 mm; 6 camadas de cobre |
 
-A mensagem do professor foi resumida para registrar os critérios. O print da correspondência pessoal não foi incluído entre os arquivos públicos do projeto.
+## Documentação do projeto
 
-Se a avaliação exigir Gerbers e pick-and-place, essas saídas ainda precisam ser geradas no Altium: não estavam no pacote final selecionado. Também permanece necessária uma solução de cotação para a montagem do módulo caso a exigência abranja o conjunto completo.
+| Conteúdo | Localização |
+|---|---|
+| Projetos Altium, esquemáticos e layouts | [Projetos](../Projetos/) |
+| Descrição dos componentes e interfaces | [Funcionamento do circuito](FUNCIONAMENTO.md) |
+| Vistas 2D e 3D | [Galeria](../Imagens/README.md) |
+| Lista de materiais em Excel e CSV | [BOM](../BoM/README.md) |
+| Fabricação das PCBs e montagem na JLCPCB | [Orçamento](../Cotacao/README.md) |
+| Projeto de referência e bibliografia | [Referências](ORIGEM.md) |
+
+## Tópicos abordados
+
+- Arquitetura do processador, memórias e interfaces.
+- Posicionamento de componentes em placas multicamadas.
+- Impedância das interligações e planos de referência.
+- Roteamento e ajuste de pares diferenciais.
+- Distribuição de alimentação e desacoplamento.
+- Lista de materiais e orçamento de fabricação e montagem.

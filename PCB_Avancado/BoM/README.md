@@ -1,30 +1,42 @@
-# Lista de materiais — BOM
+# Lista de materiais
 
-[Abrir a planilha BOM_e_Cotacao.xlsx](BOM_e_Cotacao.xlsx).
+[Abrir a planilha BOM_e_Cotacao.xlsx](BOM_e_Cotacao.xlsx)
 
-As quantidades são **por uma placa**, para o projeto base **sem aplicar a variante Prototype**. Os códigos de fabricante, fabricantes, valores e descrições vêm dos esquemáticos originais; o footprint vem do PCB. Não foram pesquisados preços atuais de componentes nem inventados códigos LCSC.
+A BOM apresenta os componentes eletrônicos do módulo iMX6 Rex e da Development Baseboard. As quantidades correspondem a **uma unidade de cada placa**, na **configuração base, sem aplicação da variante Prototype**.
 
-| Lista | Componentes com MPN | Grupos na BOM | Objetos no inventário completo |
+| Placa | Componentes com MPN | Grupos na BOM | Objetos no inventário PCB |
 |---|---:|---:|---:|
 | Módulo | 457 | 66 | 473 |
 | Placa base | 546 | 124 | 580 |
 
-Arquivos `*_BOM.csv` agrupam componentes com o mesmo valor, MPN, fabricante, footprint e descrição. Os designadores identificam cada posição. Um componente dividido em vários símbolos, como U1 do módulo, é contado apenas uma vez por placa.
+## Campos da BOM
 
-Arquivos `*_Inventario_PCB.csv` registram **todos** os objetos de componente, incluindo furos, fiduciais, pontos de teste e representações mecânicas. A tabela `Itens_auxiliares.csv` e a aba correspondente também mantêm os itens que aparecem apenas no esquemático, como bateria, jumpers, referência à PCB e referência ao firmware. Esses itens precisam ser avaliados separadamente para compra e montagem; a referência ao firmware não significa que seu binário esteja incluído.
+| Campo | Descrição |
+|---|---|
+| Designador | Identificação do componente no esquemático e na PCB |
+| Quantidade | Número de componentes por placa |
+| Valor | Valor nominal ou identificação funcional |
+| MPN | Código do componente no catálogo do fabricante |
+| Fabricante | Fabricante do componente |
+| Footprint | Padrão de montagem na PCB |
+| Descrição | Características do componente |
 
-## Variante de montagem
+Componentes com o mesmo valor, MPN, fabricante, footprint e descrição são agrupados na mesma linha. Os designadores identificam cada posição de montagem. Componentes com símbolos multipartes, como o processador U1, correspondem a uma única peça física.
 
-Os projetos possuem uma variante denominada **Prototype**, com 29 registros de alteração no módulo e 76 na base. Os arquivos `*_Variantes_originais.csv` preservam designador, código `Kind` e demais identificadores como aparecem nos `.PrjPcb`.
+## Conteúdo dos arquivos
 
-Essas alterações **não foram aplicadas** às BOMs aqui produzidas. Abra **Project → Variants** no Altium, confirme o estado de montagem de cada componente e exporte a BOM da variante escolhida antes de encomendar. Uma variante pode manter o footprint no PCB e retirar um componente da BOM quando ele é marcado como não montado; por isso o inventário de footprints não deve ser usado sozinho como lista final de compra. [Referência Altium](https://www.altium.com/pt/documentation/altium-designer/design-variants).
+| Arquivo | Conteúdo |
+|---|---|
+| `BOM_e_Cotacao.xlsx` | Listas de materiais, itens auxiliares e orçamento JLCPCB |
+| `*_BOM.csv` | Componentes agrupados por especificação |
+| `*_Inventario_PCB.csv` | Inventário de componentes, elementos mecânicos, fiduciais e pontos de teste |
+| `Itens_auxiliares.csv` | Elementos auxiliares e referências complementares dos esquemáticos |
+| `*_Variantes_originais.csv` | Registros de configuração da variante Prototype |
 
-## Conferência da extração
+Os códigos de fabricante, valores e descrições estão associados aos esquemáticos. Os footprints correspondem aos documentos PCB. A lista de itens auxiliares inclui elementos como furos de fixação, fiduciais, pontos de teste, bateria, jumpers e referências à PCB e ao firmware.
 
-- 473/473 objetos do módulo e 580/580 da base associados aos respectivos designadores nos esquemáticos.
-- Nenhum designador repetido em cada PCB.
-- Parâmetros de compra comparados entre símbolos multipartes, sem divergências nos campos utilizados.
-- Fabricante e MPN alternativos em `Manufacturer 1` / `Manufacturer Part Number 1` considerados quando presentes, como em J3 da base.
-- Preços e estoques antigos gravados nas bibliotecas não foram utilizados como cotação atual.
+## Configuração de montagem
 
-Esta BOM documenta o material recebido e precisa da revisão de variante e da compatibilização com o catálogo da montadora para uso em produção.
+A variante **Prototype** contém 29 registros de configuração no módulo e 76 na placa base. Ela é definida separadamente da configuração base utilizada nesta BOM. Os arquivos de variantes relacionam os designadores aos respectivos códigos de configuração dos projetos Altium.
+
+[Documentação de variantes no Altium Designer](https://www.altium.com/pt/documentation/altium-designer/design-variants).
