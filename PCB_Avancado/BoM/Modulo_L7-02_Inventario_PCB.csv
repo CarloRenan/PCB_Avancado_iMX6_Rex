@@ -1,4 +1,4 @@
-Designator,Valor / comentário,MPN,Fabricante,Footprint,Lado,Descrição,Esquemático de origem
+﻿Designator,Valor / comentário,MPN,Fabricante,Footprint,Lado,Descrição,Esquemático de origem
 C1,1uF,C1005X5R1C105K,TDK Corporation,C0402,BOTTOM,CAP CER 1UF 16V 10% X5R 0402,[03] - CONNECTORS.SchDoc
 C2,10uF,GRM31CR6YA106KA12L,Murata Electronics North America,C1206,TOP,CAP CER 10UF 35V 10% X5R 1206,[03] - CONNECTORS.SchDoc
 C3,220nF,C1005X5R1E224M,TDK Corporation,C0402,TOP,CAP CER 0.22UF 25V 20% X5R 0402,"[04] - CPU - DDR3, DDR3 MEM.SchDoc"

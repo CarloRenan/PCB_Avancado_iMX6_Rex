@@ -1,4 +1,4 @@
-Placa,Designator,Quantidade,Descrição / comentário,MPN,Fabricante,Classificação,Footprint
+﻿Placa,Designator,Quantidade,Descrição / comentário,MPN,Fabricante,Classificação,Footprint
 Módulo,FID1,1,FID_1MM_SMALL,,,Fiducial,FID_40X52D
 Módulo,FID2,1,FID_1MM_SMALL,,,Fiducial,FID_40X52D
 Módulo,FID3,1,FID_1MM_SMALL,,,Fiducial,FID_40X52D
