@@ -1,6 +1,6 @@
 # PCB Avançado — iMX6 Rex
 
-**Aluno:** CarloRenan  
+**Aluno:** Carlos Renan  
 **Curso:** Advanced PCB Layout Course
 
 Neste trabalho, apresento o estudo do módulo **iMX6 Rex** e da **Development Baseboard**, com foco na arquitetura do circuito, no layout de placas multicamadas e nas interligações de alta velocidade. A documentação reúne os projetos Altium, as vistas 2D e 3D, a lista de materiais e o orçamento de fabricação e montagem.
